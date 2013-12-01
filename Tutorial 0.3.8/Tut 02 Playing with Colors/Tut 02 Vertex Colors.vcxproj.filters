@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="data">
+			<UniqueIdentifier>{019B39B0-C0D7-7E40-852A-588314DFD0C1}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="VertexColors.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="data\VertexColors.frag">
+			<Filter>data</Filter>
+		</None>
+		<None Include="data\VertexColors.vert">
+			<Filter>data</Filter>
+		</None>
+	</ItemGroup>
+</Project>

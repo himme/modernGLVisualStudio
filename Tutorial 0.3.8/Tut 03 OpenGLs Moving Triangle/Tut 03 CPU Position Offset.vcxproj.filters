@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="data">
+			<UniqueIdentifier>{F8964AF9-23EC-EE46-9CE0-18EBDC80E92D}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="cpuPositionOffset.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="data\standard.vert">
+			<Filter>data</Filter>
+		</None>
+		<None Include="data\standard.frag">
+			<Filter>data</Filter>
+		</None>
+	</ItemGroup>
+</Project>

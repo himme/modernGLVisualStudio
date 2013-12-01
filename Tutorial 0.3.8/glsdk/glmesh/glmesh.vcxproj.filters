@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="include">
+			<UniqueIdentifier>{D913BCA9-9231-824E-A903-3B6E3DE66435}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="include\glmesh">
+			<UniqueIdentifier>{A521681F-6239-9C45-899D-2E6833215B45}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source">
+			<UniqueIdentifier>{7C457FE8-D9D6-294C-BE05-F132272E813F}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="include\glmesh\Draw.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\GenDescriptors.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\glmesh.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\Mesh.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\Quadrics.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\StreamBuffer.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glmesh\VertexFormat.h">
+			<Filter>include\glmesh</Filter>
+		</ClInclude>
+		<ClInclude Include="source\GenHelper.h">
+			<Filter>source</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="source\Draw.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\GenHelper.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\Mesh.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\Quadrics.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\StreamBuffer.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\VertexFormat.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>
