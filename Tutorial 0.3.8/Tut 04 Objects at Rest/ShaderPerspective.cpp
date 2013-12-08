@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <glload/gl_3_3.h>
 #include <GL/freeglut.h>
+#include <glm/glm.hpp>
 #include "../framework/framework.h"
 
 #define ARRAY_COUNT( array ) (sizeof( array ) / (sizeof( array[0] ) * (sizeof( array ) != sizeof(void*) || sizeof( array[0] ) <= sizeof(void*))))
@@ -19,6 +20,8 @@ GLuint offsetUniform;
 
 GLuint frustumScaleUnif;
 GLuint zNearUnif, zFarUnif;
+GLuint eyePointVec3;
+glm::vec3 eyePoint;
 
 void InitializeProgram()
 {
@@ -34,11 +37,15 @@ void InitializeProgram()
 	frustumScaleUnif = glGetUniformLocation(theProgram, "frustumScale");
 	zNearUnif = glGetUniformLocation(theProgram, "zNear");
 	zFarUnif = glGetUniformLocation(theProgram, "zFar");
+	eyePointVec3 = glGetUniformLocation(theProgram, "eyePoint");
+
+	eyePoint = glm::vec3(0, 0, 2);
 
 	glUseProgram(theProgram);
 	glUniform1f(frustumScaleUnif, 1.0f);
 	glUniform1f(zNearUnif, 1.0f);
 	glUniform1f(zFarUnif, 3.0f);
+	glUniform3fv(eyePointVec3, 1, &eyePoint[0]);  
 	glUseProgram(0);
 }
 

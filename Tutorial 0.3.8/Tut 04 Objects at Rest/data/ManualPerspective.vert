@@ -6,6 +6,7 @@ layout(location = 1) in vec4 color;
 smooth out vec4 theColor;
 
 uniform vec2 offset;
+uniform vec3 eyePoint;
 uniform float zNear;
 uniform float zFar;
 uniform float frustumScale;
@@ -13,11 +14,15 @@ uniform float frustumScale;
 
 void main()
 {
+	
 	vec4 cameraPos = position + vec4(offset.x, offset.y, 0.0, 0.0);
 	vec4 clipPos;
 	
 	clipPos.xy = cameraPos.xy * frustumScale;
 	
+	clipPos.x += eyePoint.x;
+	clipPos.y += eyePoint.y;
+	cameraPos.z /= -eyePoint.z;
 	clipPos.z = cameraPos.z * (zNear + zFar) / (zNear - zFar);
 	clipPos.z += 2 * zNear * zFar / (zNear - zFar);
 	
